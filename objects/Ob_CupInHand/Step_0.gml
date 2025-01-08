@@ -1,6 +1,6 @@
 // Следим за позицией мышки
-x = mouse_x;
-y = mouse_y;
+x = mouse_x - 30;
+y = mouse_y - 30;
 
 // Если мышка отпущена, уничтожаем объект
 if (!mouse_check_button(mb_left)) {
