@@ -35,6 +35,7 @@
   "name":"Coffee_Next",
   "resources":[
     {"id":{"name":"Ob__Room","path":"objects/Ob__Room/Ob__Room.yy",},},
+    {"id":{"name":"Ob_BrokenCup","path":"objects/Ob_BrokenCup/Ob_BrokenCup.yy",},},
     {"id":{"name":"Ob_Capuchino","path":"objects/Ob_Capuchino/Ob_Capuchino.yy",},},
     {"id":{"name":"Ob_CoffeeMachine","path":"objects/Ob_CoffeeMachine/Ob_CoffeeMachine.yy",},},
     {"id":{"name":"Ob_CupBox","path":"objects/Ob_CupBox/Ob_CupBox.yy",},},
@@ -48,6 +49,7 @@
     {"id":{"name":"Sc_Gravity","path":"scripts/Sc_Gravity/Sc_Gravity.yy",},},
     {"id":{"name":"Sound1","path":"sounds/Sound1/Sound1.yy",},},
     {"id":{"name":"Sp_Background","path":"sprites/Sp_Background/Sp_Background.yy",},},
+    {"id":{"name":"Sp_BrokenCup","path":"sprites/Sp_BrokenCup/Sp_BrokenCup.yy",},},
     {"id":{"name":"Sp_Capuchino","path":"sprites/Sp_Capuchino/Sp_Capuchino.yy",},},
     {"id":{"name":"Sp_CoffeeMachine","path":"sprites/Sp_CoffeeMachine/Sp_CoffeeMachine.yy",},},
     {"id":{"name":"Sp_Cup","path":"sprites/Sp_Cup/Sp_Cup.yy",},},
