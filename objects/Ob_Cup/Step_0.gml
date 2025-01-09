@@ -8,7 +8,7 @@ if (dragging && !isFilling) {
 
     // Проверка, находится ли кружка на кофемашине
     var coffee_machine = instance_find(Ob_CoffeeMachine, 0); // Найти первый экземпляр кофемашины
-	if (position_meeting(x, y, Ob_CoffeeMachine) // Кружка на кофемашине
+	if (position_meeting(x, y, coffee_machine) // Кружка на кофемашине
 	&& !isCoffeeFilled                           // Кружка ещё не наполнена
 	&& coffee_machine.isWorking) {              // Кофемашина работает
 	    isFilling = true;                       // Начинаем наполнение кофе
