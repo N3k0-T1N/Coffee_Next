@@ -54,6 +54,7 @@
     {"id":{"name":"Sp_CupBox","path":"sprites/Sp_CupBox/Sp_CupBox.yy",},},
     {"id":{"name":"Sp_CupMilk","path":"sprites/Sp_CupMilk/Sp_CupMilk.yy",},},
     {"id":{"name":"Sp_Hearts","path":"sprites/Sp_Hearts/Sp_Hearts.yy",},},
+    {"id":{"name":"Sp_Men","path":"sprites/Sp_Men/Sp_Men.yy",},},
     {"id":{"name":"Sp_Milk","path":"sprites/Sp_Milk/Sp_Milk.yy",},},
     {"id":{"name":"Sp_Trashcan","path":"sprites/Sp_Trashcan/Sp_Trashcan.yy",},},
   ],
