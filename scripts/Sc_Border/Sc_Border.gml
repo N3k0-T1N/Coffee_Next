@@ -1,7 +1,9 @@
 function sc_border(obj) {
     var obj_bottom = obj.y + sprite_height;
     var obj_right = obj.x + sprite_width;
-
+	if(obj.dragging) {
+		obj.vspeed = 0;
+	}
     // Ограничение верхней границы
     if (obj.y <= 1) {
         obj.y = 1;
@@ -15,6 +17,7 @@ function sc_border(obj) {
     // Ограничение нижней границы
     if (obj_bottom >= room_height - 1) {
         obj.y = room_height - 1 - sprite_height;
+		obj.vspeed = 0; // Обнуляем скорость
     }
 
     // Ограничение правой границы
