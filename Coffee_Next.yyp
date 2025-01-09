@@ -44,6 +44,7 @@
     {"id":{"name":"Ob_Trashcan","path":"objects/Ob_Trashcan/Ob_Trashcan.yy",},},
     {"id":{"name":"Object7","path":"objects/Object7/Object7.yy",},},
     {"id":{"name":"Ro_CoffeeRoom","path":"rooms/Ro_CoffeeRoom/Ro_CoffeeRoom.yy",},},
+    {"id":{"name":"Sc_Border","path":"scripts/Sc_Border/Sc_Border.yy",},},
     {"id":{"name":"Sc_Gravity","path":"scripts/Sc_Gravity/Sc_Gravity.yy",},},
     {"id":{"name":"Sound1","path":"sounds/Sound1/Sound1.yy",},},
     {"id":{"name":"Sp_Background","path":"sprites/Sp_Background/Sp_Background.yy",},},
