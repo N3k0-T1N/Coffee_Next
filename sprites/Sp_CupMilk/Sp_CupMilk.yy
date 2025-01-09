@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"Sp_CupMilk",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":76,
   "bbox_left":0,
   "bbox_right":61,

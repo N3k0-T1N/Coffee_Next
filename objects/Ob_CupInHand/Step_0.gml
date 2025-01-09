@@ -1,11 +1,7 @@
-// Следим за позицией мышки
-x = mouse_x - 30;
-y = mouse_y - 30;
-
-// Если мышка отпущена, уничтожаем объект
-if (!mouse_check_button(mb_left)) {
-    if (parent_box != noone) {
-        parent_box.is_held = false; // Разрешаем коробке снова брать чашку
-    }
-    instance_destroy(); // Уничтожаем чашку в руке
+if (dragging) {
+    x = mouse_x - offset_x; // Обновляем позицию X
+    y = mouse_y - offset_y; // Обновляем позицию Y
+    vspeed = 0;             // Сбрасываем вертикальную скорость при перетаскивании
+} else {
+	apply_gravity(self);    // Применяем гравитацию
 }
