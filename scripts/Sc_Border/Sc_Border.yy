@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Sc_Border",
   "parent":{
-    "name":"Скрипты",
-    "path":"folders/Скрипты.yy",
+    "name":"Collisions",
+    "path":"folders/Скрипты/Collisions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
