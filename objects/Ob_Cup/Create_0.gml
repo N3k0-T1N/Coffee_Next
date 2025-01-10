@@ -1,7 +1,8 @@
 dragging = false; // Флаг состояния перетаскивания
 
-isFalling = false;
-isBroken = false;
+isBreakable = true; // Обьект ломается
+isBroken = false; // Флаг того, сломан ли обьект
+obj_breake = Sp_BrokenCup; // Спрайт сломаной кружки
 
 isFillingCoffee = false; // Флаг состояния наполняется ли стакан кофе
 isCoffeeFilled = false; // Флаг заполнения кружки кофе
