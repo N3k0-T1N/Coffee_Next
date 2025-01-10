@@ -13,7 +13,11 @@ if (dragging) {
 sc_border(self);
 
 // Смена кадров для молока
-if (isFilling || isMilkFilled && milk_capuchined_fill == 0) {
+if ((isFilling || isMilkFilled) && milk_capuchined == 0) {
     // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
     image_index = floor(milk_filled / max_fill_time * (image_number - 1));
+} else if ((isCapuching || isCapuchined) && milk_capuchined >= 1) {
+	sprite_index = Sp_CupMilkCapuchined;
+	image_index = floor(milk_capuchined / max_capuchine_time * (image_number - 1)); 
+	
 }

@@ -6,8 +6,8 @@ if (dragging && !isFillingCoffee) {
     apply_gravity(self);    // Применяем гравитацию
     collision_tables(self); // Коллизии с возможными полками
 	
-	if(!isBroken) {
-		coffee_filling(self);     // Проверка, находится ли кружка на кофемашине
+	if(!isBroken) { // Если кружка не сломана
+		coffee_filling(self);     // Наполнение кружку кофем
 	}
 }
 
