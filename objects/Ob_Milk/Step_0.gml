@@ -17,3 +17,6 @@ if (isFill) {
 else {
 	image_index = 0;
 }
+
+isFalling = false;
+isBroken = false;

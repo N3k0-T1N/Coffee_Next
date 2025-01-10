@@ -12,14 +12,7 @@ if (dragging && !isFillingCoffee) {
     coffee_filling(self);   // Проверка, находится ли кружка на кофемашине
 }
 
-// Проверяем скорость и соприкосновение со столом перед сменой спрайта
-if (!dragging) {
-    if (vspeed > 5 && y + sprite_height >= table_y) { // Проверяем скорость и касание стола
-        sprite_index = Sp_BrokenCup;     // Меняем спрайт на разбитую кружку
-        vspeed = 0;                      // Останавливаем движение после разбивания
-        y = table_y - sprite_height;     // Корректируем позицию кружки, чтобы она не провалилась ниже стола
-    }
-}
+sc_border(self);
 
 // Обновление спрайта кружки в зависимости от состояния
 if (isFillingCoffee || isCoffeeFilled && milk_filled == 0) {

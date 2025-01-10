@@ -1,5 +1,8 @@
 dragging = false; // Флаг состояния перетаскивания
 
+isFalling = false;
+isBroken = false;
+
 isFillingCoffee = false; // Флаг состояния наполняется ли стакан кофе
 isCoffeeFilled = false; // Флаг заполнения кружки кофе
 max_fill_coffee_time = room_speed * 5; // 5 секунд для полного заполнения

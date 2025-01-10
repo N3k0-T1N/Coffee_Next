@@ -17,6 +17,8 @@ function sc_border(obj) {
     // Ограничение нижней границы
     if (obj_bottom >= room_height - 1) {
         obj.y = room_height - 1 - sprite_height;
+		obj.isFalling = true;
+		break_obj(obj);
 		obj.vspeed = 0; // Обнуляем скорость
     }
 

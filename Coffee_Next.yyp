@@ -48,6 +48,7 @@
     {"id":{"name":"Ob_Trashcan","path":"objects/Ob_Trashcan/Ob_Trashcan.yy",},},
     {"id":{"name":"Ro_CoffeeRoom","path":"rooms/Ro_CoffeeRoom/Ro_CoffeeRoom.yy",},},
     {"id":{"name":"Sc_Border","path":"scripts/Sc_Border/Sc_Border.yy",},},
+    {"id":{"name":"Sc_Breaking","path":"scripts/Sc_Breaking/Sc_Breaking.yy",},},
     {"id":{"name":"Sc_CollisionTables","path":"scripts/Sc_CollisionTables/Sc_CollisionTables.yy",},},
     {"id":{"name":"Sc_Cup","path":"scripts/Sc_Cup/Sc_Cup.yy",},},
     {"id":{"name":"Sc_CupMilk","path":"scripts/Sc_CupMilk/Sc_CupMilk.yy",},},
