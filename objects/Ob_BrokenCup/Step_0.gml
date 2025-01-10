@@ -5,4 +5,5 @@ if (dragging) {
 	sc_border(self)
 } else {
 	apply_gravity(self);    // Применяем гравитацию
+	collision_tables(self); // Коллизии с возможными полками
 }
