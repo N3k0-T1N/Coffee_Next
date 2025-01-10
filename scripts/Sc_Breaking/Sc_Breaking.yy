@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Sc_Breaking",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Sc_Breaking",
+  "parent":{
+    "name":"Collisions",
+    "path":"folders/Скрипты/Collisions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

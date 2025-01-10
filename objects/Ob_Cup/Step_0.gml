@@ -11,7 +11,6 @@ if (dragging && !isFillingCoffee) {
 
 sc_border(self);
 
-
 // Обновление спрайта кружки в зависимости от состояния
 if (isFillingCoffee || isCoffeeFilled && milk_filled == 0) {
     // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
