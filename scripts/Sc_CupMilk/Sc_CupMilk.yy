@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Sc_Gravity",
+  "%Name":"Sc_CupMilk",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Sc_Gravity",
+  "name":"Sc_CupMilk",
   "parent":{
-    "name":"Collisions",
-    "path":"folders/Скрипты/Collisions.yy",
+    "name":"Objects_Scripts",
+    "path":"folders/Скрипты/Objects_Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

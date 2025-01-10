@@ -1,0 +1,33 @@
+function milk_filling(obj){
+	var milk = instance_find(Ob_Milk, 0); // Найти первый экземпляр молока
+	if (position_meeting(x + sprite_width + 10, y, milk) // Если кружка находится под молоком
+	&& global.dragged_object == milk // Молоко в руке
+	&& !obj.isMilkFilled) { // Кружка не заполнена
+		obj.isFilling = true; // Меняем состояние наполнения
+		milk.isFill = true; // Молоко наполняет
+		obj.milk_filled += obj.milk_fill_speed; // Кол-во наполнения
+	
+		if (obj.milk_filled >= obj.max_fill_time) {
+			obj.isFilling = false; // Наполнение завершено
+			milk.isFill = false; // Молоко не наполняет
+			obj.isMilkFilled = true; // Полностью заполнено
+			obj.milk_filled = obj.max_fill_time; // Заменяем состояние молока на максимальное
+		}
+  } else {
+		obj.isFilling = false;
+		milk.isFill = false; // Молоко не наполняет
+  }
+}
+
+
+function milk_capuching(obj) {
+	var coffee_machine = instance_find(Ob_CoffeeMachine, 0); // Находим кофемашину
+	if (position_meeting(obj.x, obj.y, coffee_machine) // Кружка на кофемашине
+	&& obj.isMilkFilled // Чашка заполнена
+	&& !obj.isCapuchined // Молоко незакапучено
+	&& coffee_machine.isWorking) { // Кофемашина работает
+		obj.isCapuching = true; // Молоко вспенивается
+	} else {
+		obj.isCapuching = false; // Молоко не вспенивается
+	}
+}

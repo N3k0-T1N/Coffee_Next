@@ -8,3 +8,12 @@ if (dragging) {
 }
 
 sc_border(self)
+
+
+
+if (isFill) {
+	image_index = 1;
+}
+else {
+	image_index = 0;
+}
