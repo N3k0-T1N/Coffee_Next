@@ -60,7 +60,6 @@
     {"id":{"name":"Pour_Milk","path":"sounds/Pour_Milk/Pour_Milk.yy",},},
     {"id":{"name":"Put_Cup","path":"sounds/Put_Cup/Put_Cup.yy",},},
     {"id":{"name":"Put_CupMilk","path":"sounds/Put_CupMilk/Put_CupMilk.yy",},},
-
     {"id":{"name":"Sp_Background","path":"sprites/Sp_Background/Sp_Background.yy",},},
     {"id":{"name":"Sp_BrokenCup","path":"sprites/Sp_BrokenCup/Sp_BrokenCup.yy",},},
     {"id":{"name":"Sp_Capuchino","path":"sprites/Sp_Capuchino/Sp_Capuchino.yy",},},
