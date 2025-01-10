@@ -17,6 +17,3 @@ if (isFilling || isMilkFilled && milk_capuchined_fill == 0) {
     // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
     image_index = floor(milk_filled / max_fill_time * (image_number - 1));
 }
-
-isFalling = false;
-isBroken = false;

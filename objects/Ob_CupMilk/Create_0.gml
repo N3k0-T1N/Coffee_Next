@@ -1,7 +1,6 @@
 dragging = false; // Флаг состояния перетаскивания
 
-isFalling = false;
-isBroken = false;
+isBreakable = false;
 
 isFilling = false; // Флаг состояния наполняется ли стакан кофе или молоком
 isMilkFilled = false; // Флаг заполнения кружки

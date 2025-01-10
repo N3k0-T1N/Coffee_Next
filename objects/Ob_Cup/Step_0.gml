@@ -6,7 +6,9 @@ if (dragging && !isFillingCoffee) {
     apply_gravity(self);    // Применяем гравитацию
     collision_tables(self); // Коллизии с возможными полками
 	
-	coffee_filling(self);     // Проверка, находится ли кружка на кофемашине
+	if(!isBroken) {
+		coffee_filling(self);     // Проверка, находится ли кружка на кофемашине
+	}
 }
 
 sc_border(self);
