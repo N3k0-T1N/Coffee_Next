@@ -14,14 +14,12 @@ sc_border(self);
 
 // Смена кадров для молока
 if (isFillCapuchino) {
-	show_debug_message("1 УСЛОВИЕ");
     sprite_index = Sp_CupMilkCapuchined;
     image_index = 1; // Уровень молока
 } else if (milk_capuchined >= max_capuchine_time) {
 	sprite_index = Sp_CupMilkCapuchined;
     image_index = 0; // Уровень молока
 } else if (milk_capuchined > 0) {
-	show_debug_message("2 УСЛОВИЕ");
     sprite_index = Sp_CupMilkCapuchinAnimated;
 } else {
     sprite_index = Sp_CupMilk;
