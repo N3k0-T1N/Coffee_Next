@@ -37,6 +37,8 @@
   "name":"Coffee_Next",
   "resources":[
     {"id":{"name":"Ob__Room","path":"objects/Ob__Room/Ob__Room.yy",},},
+    {"id":{"name":"Ob_ButtonExit","path":"objects/Ob_ButtonExit/Ob_ButtonExit.yy",},},
+    {"id":{"name":"Ob_ButtonPlay","path":"objects/Ob_ButtonPlay/Ob_ButtonPlay.yy",},},
     {"id":{"name":"Ob_CoffeeMachine","path":"objects/Ob_CoffeeMachine/Ob_CoffeeMachine.yy",},},
     {"id":{"name":"Ob_Cup","path":"objects/Ob_Cup/Ob_Cup.yy",},},
     {"id":{"name":"Ob_CupBox","path":"objects/Ob_CupBox/Ob_CupBox.yy",},},
@@ -46,6 +48,7 @@
     {"id":{"name":"Ob_Tooltip","path":"objects/Ob_Tooltip/Ob_Tooltip.yy",},},
     {"id":{"name":"Ob_Trashcan","path":"objects/Ob_Trashcan/Ob_Trashcan.yy",},},
     {"id":{"name":"Ro_CoffeeRoom","path":"rooms/Ro_CoffeeRoom/Ro_CoffeeRoom.yy",},},
+    {"id":{"name":"Ro_Menu","path":"rooms/Ro_Menu/Ro_Menu.yy",},},
     {"id":{"name":"Sc_Border","path":"scripts/Sc_Border/Sc_Border.yy",},},
     {"id":{"name":"Sc_Breaking","path":"scripts/Sc_Breaking/Sc_Breaking.yy",},},
     {"id":{"name":"Sc_CollisionTables","path":"scripts/Sc_CollisionTables/Sc_CollisionTables.yy",},},
@@ -62,6 +65,8 @@
     {"id":{"name":"Put_CupMilk","path":"sounds/Put_CupMilk/Put_CupMilk.yy",},},
     {"id":{"name":"Sp_Background","path":"sprites/Sp_Background/Sp_Background.yy",},},
     {"id":{"name":"Sp_BrokenCup","path":"sprites/Sp_BrokenCup/Sp_BrokenCup.yy",},},
+    {"id":{"name":"Sp_ButtonExit","path":"sprites/Sp_ButtonExit/Sp_ButtonExit.yy",},},
+    {"id":{"name":"Sp_ButtonPlay","path":"sprites/Sp_ButtonPlay/Sp_ButtonPlay.yy",},},
     {"id":{"name":"Sp_Capuchino","path":"sprites/Sp_Capuchino/Sp_Capuchino.yy",},},
     {"id":{"name":"Sp_CoffeeMachine","path":"sprites/Sp_CoffeeMachine/Sp_CoffeeMachine.yy",},},
     {"id":{"name":"Sp_Cup","path":"sprites/Sp_Cup/Sp_Cup.yy",},},
@@ -77,6 +82,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"Ro_Menu","path":"rooms/Ro_Menu/Ro_Menu.yy",},},
     {"roomId":{"name":"Ro_CoffeeRoom","path":"rooms/Ro_CoffeeRoom/Ro_CoffeeRoom.yy",},},
   ],
   "templateType":"game",
