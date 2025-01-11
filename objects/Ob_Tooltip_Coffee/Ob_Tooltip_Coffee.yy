@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Tooltip",
-    "path":"sprites/Sp_Tooltip/Sp_Tooltip.yy",
+    "name":"Sp_Tooltip_Coffee",
+    "path":"sprites/Sp_Tooltip_Coffee/Sp_Tooltip_Coffee.yy",
   },
   "spriteMaskId":null,
   "visible":true,

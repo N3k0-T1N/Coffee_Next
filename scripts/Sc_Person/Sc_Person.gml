@@ -12,21 +12,56 @@ function getted_coffee(obj){
 }
 
 function which_coffee_tooltip(obj) {
-	switch
+	if (obj.number_queue_person == 1
+	&& isStanding
+	&& !isTooltiled) {
+		var tooltip_coffee;
+		switch (obj.wanted_number_coffe) {
+		case 1:
+		tooltip_coffee = instance_create_layer(x, y, "cups_layer", Ob_Tooltip_Coffee)
+		obj.with_coffee = true;
+		obj.with_milk = false;
+			break;
+		case 2:
+		tooltip_coffee = instance_create_layer(x, y, "cups_layer", Ob_Tooltip_Capuchino)
+		obj.with_coffee = true;
+		obj.with_milk = true;
+			break;
+		}
+		isTooltiled = true;
+	}
 }
 
-function got_coffee (obj) {
+function got_coffee () {
+	var tooltip = instance_find(Ob_Tooltip_Coffee, 0);
+	if (tooltip == noone) {
+		tooltip = instance_find(Ob_Tooltip_Capuchino, 0);
+		global.scores += global.scores_for_coffee;
+		instance_destroy(tooltip);
+	} else {
+		global.scores += global.scores_for_capuchino;
+		instance_destroy(tooltip);
+	}
 
 }
 
-function not_got_coffee (obj) {
+function not_got_coffee () {
+	var tooltip = instance_find(Ob_Tooltip_Coffee, 0);
+	if (tooltip == noone) {
+		tooltip = instance_find(Ob_Tooltip_Capuchino, 0);
+		global.hp -= global.hp;
+		instance_destroy(tooltip);
+	} else {
+		global.scores += global.scores_for_capuchino;
+		instance_destroy(tooltip);
+	}
 
 }
 
 function time_expired(obj){
 	obj.exit_timer += obj.exit_timer_speed;
 	if (exit_timer >= exit_max_timer) {
-		not_got_coffee(obj)
+		not_got_coffee()
 		obj.isLeaving = true;
 	}
 }
@@ -51,7 +86,8 @@ function person_to_position(obj) {
 function spawn_person() {
     // Если количество персонажей меньше максимального
     if (instance_number(Ob_Person) < global.max_persons) {
-        if (global.person_time_respawn >= global.person_max_time_respawn) {
+        if (global.person_time_respawn >= global.person_max_time_respawn
+		|| global.first_person) {
             // Создаём нового персонажа
             var new_person = instance_create_layer(1025, 208, "ui_layer", Ob_Person);
 
@@ -67,6 +103,7 @@ function spawn_person() {
             }
 
             global.person_time_respawn = 0; // Сбрасываем таймер спавна
+			global.first_person = false;
         } else {
             global.person_time_respawn += global.person_time_speed_respawn; // Увеличиваем время ожидания
         }
