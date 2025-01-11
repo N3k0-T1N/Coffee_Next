@@ -8,18 +8,20 @@ if (dragging && !isFillingCoffee) {
 	
 	if(!isBroken) { // Если кружка не сломана
 		coffee_filling(self);     // Наполнение кружку кофем
+		milk_capuchined_filling(self); // Наполнение молоком
 	}
 }
 
 sc_border(self);
 
 // Обновление спрайта кружки в зависимости от состояния
-if (isFillingCoffee || isCoffeeFilled && milk_filled == 0) {
+if ((isFillingCoffee || isCoffeeFilled) && milk_filled == 0 && !isBroken) {
     // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
     image_index = floor(coffee_filled / max_fill_coffee_time * (image_number - 1));
 }
 
-else if (isCoffeeFilled && milk_filled > 0) {
+else if (isCoffeeFilled && milk_filled > 0 && !isBroken) {
     // Если кружка заполнена кофе и частично молоком, меняем спрайт на капучино
     sprite_index = Sp_Capuchino;
+	image_index = floor(milk_filled / max_fill_milk_time * (image_number - 1));
 }

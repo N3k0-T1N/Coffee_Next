@@ -13,3 +13,29 @@ function coffee_filling(obj){
 	    }
 	}
 }
+
+function milk_capuchined_filling(obj) {
+	var milk_cup = instance_find(Ob_CupMilk, 0) // Находим кружку молока
+	if (position_meeting(x + sprite_width + 10, y, milk_cup) // Если кружка находится под кружкой с молоком
+	&& global.dragged_object == milk_cup // И обьект в руке кружка молока
+	&& obj.isCoffeeFilled // Кофе залито
+	&& !obj.isMilkFilled
+	&& milk_cup.isCapuchined) { // И кофе не залито молоком
+		obj.isMilkFilling = true; // Кофе наполняется молоком
+		milk_cup.isFillCapuchino = true; // Кружка молока наполняет кофе
+		obj.milk_filled += fill_milk_speed; // Таймер для наполнения, насколько заполнился
+		if (obj.milk_filled >= obj.max_fill_milk_time) { // Если заполнился
+			obj.isMilkFilling = false; // Больше не наполняется молоком
+			milk_cup.isFillCapuchino = false; // Не наполняет молоком
+			milk_cup.isMilkFilled = false; // Молоком не заполнено
+			milk_cup.isCapuchined = false; // Не закапученировано
+			milk_cup.milk_filled = 0; // Стартовый уровень молока
+			milk_cup.milk_capuchined = 0; // Стартовый уровень капучинирования
+			obj.isMilkFilled = true; // Наполнено молоком
+			obj.milk_filled = obj.max_fill_milk_time; // Навсякий случай сравниваем уровень молока к максимальному
+		}
+	} else {
+		obj.isMilkFilling = false;
+		milk_cup.isFillCapuchino = false;
+	}
+}

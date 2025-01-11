@@ -1,4 +1,4 @@
-if (dragging) {
+if (dragging && !isCapuching) {
     x = mouse_x - offset_x; // Обновляем позицию X
     y = mouse_y - offset_y; // Обновляем позицию Y
   vspeed = 0;             // Сбрасываем вертикальную скорость при перетаскивании
@@ -13,11 +13,14 @@ if (dragging) {
 sc_border(self);
 
 // Смена кадров для молока
-if ((isFilling || isMilkFilled) && milk_capuchined == 0) {
-    // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
-    image_index = floor(milk_filled / max_fill_time * (image_number - 1));
-} else if ((isCapuching || isCapuchined) && milk_capuchined >= 1) {
+if (isFillCapuchino) {
 	sprite_index = Sp_CupMilkCapuchined;
-	image_index = floor(milk_capuchined / max_capuchine_time * (image_number - 1)); 
-	
+	image_index = 2;
+} else if (milk_capuchined >= 1) {
+	sprite_index = Sp_CupMilkCapuchined;
+	image_index = floor(milk_capuchined / max_capuchine_time * (image_number - 2)); 
+} else if (milk_capuchined == 0) {
+    // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
+	sprite_index = Sp_CupMilk
+    image_index = floor(milk_filled / max_fill_time * (image_number - 1));
 }

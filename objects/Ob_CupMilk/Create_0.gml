@@ -14,6 +14,8 @@ max_capuchine_time = room_speed * 5; // Время для капучиниров
 capuchine_speed = 1; // Скорость капучинирования
 milk_capuchined = 0; // Уровень капучинирования
 
+isFillCapuchino = false; // Наполняет ли молоком кофе
+
 offset_x = 0; // Смещение по X
 offset_y = 0; // Смещение по Y
 vspeed =0;
