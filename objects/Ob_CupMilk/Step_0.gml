@@ -12,19 +12,6 @@ if (dragging && !isCapuching) {
 
 sc_border(self);
 
-//// Смена кадров для молока
-//if (isFillCapuchino) {
-//	sprite_index = Sp_CupMilkCapuchined;
-//	image_index = 2;
-//} else if (milk_capuchined >= 1) {
-//	sprite_index = Sp_CupMilkCapuchined;
-//	image_index = floor(milk_capuchined / max_capuchine_time * (image_number - 2)); 
-//} else if (milk_capuchined == 0) {
-//    // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
-//	sprite_index = Sp_CupMilk
-//    image_index = floor(milk_filled / max_fill_time * (image_number - 1));
-//}
-
 // Смена кадров для молока
 if (isFillCapuchino) {
 	show_debug_message("1 УСЛОВИЕ");
