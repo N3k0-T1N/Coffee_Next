@@ -12,7 +12,6 @@ function getted_coffee(obj){
 }
 
 function which_coffee_tooltip(obj) {
-	switch
 }
 
 function got_coffee (obj) {
