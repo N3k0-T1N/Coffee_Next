@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"Sp_CupMilkCapuchined",
-  "bboxMode":2,
-  "bbox_bottom":76,
+  "%Name":"Sp_Tooltip",
+  "bboxMode":0,
+  "bbox_bottom":41,
   "bbox_left":0,
-  "bbox_right":61,
+  "bbox_right":41,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"1aca433d-b7be-4a69-b36d-c83dd4ff9e84","name":"1aca433d-b7be-4a69-b36d-c83dd4ff9e84","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"0239b753-2820-450d-b849-1069fbe7abb1","name":"0239b753-2820-450d-b849-1069fbe7abb1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":128,
+  "height":42,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"1caa53b0-531d-4071-8011-0e415a97771d","blendMode":0,"displayName":"default","isLocked":false,"name":"1caa53b0-531d-4071-8011-0e415a97771d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"87d84599-819a-46bc-b115-df13f4539a5c","blendMode":0,"displayName":"default","isLocked":false,"name":"87d84599-819a-46bc-b115-df13f4539a5c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"Sp_CupMilkCapuchined",
+  "name":"Sp_Tooltip",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"Sp_CupMilkCapuchined",
+    "%Name":"Sp_Tooltip",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,9 +57,9 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Sp_CupMilkCapuchined",
+    "name":"Sp_Tooltip",
     "playback":1,
-    "playbackSpeed":0.0,
+    "playbackSpeed":30.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1aca433d-b7be-4a69-b36d-c83dd4ff9e84","path":"sprites/Sp_CupMilkCapuchined/Sp_CupMilkCapuchined.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"d9ff7a39-51bb-46c1-8010-947714993c9b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"0239b753-2820-450d-b849-1069fbe7abb1","path":"sprites/Sp_Tooltip/Sp_Tooltip.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1572ebf3-07fa-49b8-a7d9-95e5df82da90","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":128,
+  "width":42,
 }
