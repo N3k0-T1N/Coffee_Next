@@ -5,6 +5,7 @@ function break_obj(obj) {
 			obj.isBroken = true; // Кружка сломана
 			obj.image_index = 0	// Меняем кадр на самуый первый
 			obj.sprite_index = obj.obj_breake;  // Меняем спрайт на разбитую кружк
+			audio_play_sound(Crash, 1, false);
 	    }
 	}
 }

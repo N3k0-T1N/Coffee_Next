@@ -72,6 +72,7 @@
     {"id":{"name":"Close_Trashcan","path":"sounds/Close_Trashcan/Close_Trashcan.yy",},},
     {"id":{"name":"Coffee_Machine","path":"sounds/Coffee_Machine/Coffee_Machine.yy",},},
     {"id":{"name":"Crash","path":"sounds/Crash/Crash.yy",},},
+    {"id":{"name":"MusicOnBackground","path":"sounds/MusicOnBackground/MusicOnBackground.yy",},},
     {"id":{"name":"Open_Trashcan","path":"sounds/Open_Trashcan/Open_Trashcan.yy",},},
     {"id":{"name":"Pour_Milk","path":"sounds/Pour_Milk/Pour_Milk.yy",},},
     {"id":{"name":"Put_Cup","path":"sounds/Put_Cup/Put_Cup.yy",},},

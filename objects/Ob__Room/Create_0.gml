@@ -8,7 +8,7 @@ global.milk_shelf_x2 = 670; // Полка с молоком
 
 global.first_person = true;
 global.max_persons = 3; // Максимальное кол-во людей
-global.person_max_time_respawn = room_speed * irandom_range(10, 20); // Диапазон респавна людей
+global.person_max_time_respawn = room_speed * irandom_range(10, 40); // Диапазон респавна людей
 global.person_time_respawn = 0; // Сколько времени сейчас
 global.person_time_speed_respawn = 1; // Сколько времени сейчас
 global.queue_positions = [400, 600, 800]; // Позиции для 3 персонажей
