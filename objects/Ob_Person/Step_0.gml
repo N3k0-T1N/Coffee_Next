@@ -1,5 +1,6 @@
 person_to_position(self);
 time_expired(self);
+which_coffee_tooltip(self)
 
 if (isLeaving) {
 	direction = point_direction(x, y, -1 - sprite_width, 208);
