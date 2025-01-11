@@ -37,8 +37,6 @@
   "name":"Coffee_Next",
   "resources":[
     {"id":{"name":"Ob__Room","path":"objects/Ob__Room/Ob__Room.yy",},},
-    {"id":{"name":"Ob_BrokenCup","path":"objects/Ob_BrokenCup/Ob_BrokenCup.yy",},},
-    {"id":{"name":"Ob_Capuchino","path":"objects/Ob_Capuchino/Ob_Capuchino.yy",},},
     {"id":{"name":"Ob_CoffeeMachine","path":"objects/Ob_CoffeeMachine/Ob_CoffeeMachine.yy",},},
     {"id":{"name":"Ob_Cup","path":"objects/Ob_Cup/Ob_Cup.yy",},},
     {"id":{"name":"Ob_CupBox","path":"objects/Ob_CupBox/Ob_CupBox.yy",},},
