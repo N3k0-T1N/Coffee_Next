@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Tooltip",
-    "path":"sprites/Sp_Tooltip/Sp_Tooltip.yy",
+    "name":"Sp_Tooltip_capuchino",
+    "path":"sprites/Sp_Tooltip_capuchino/Sp_Tooltip_capuchino.yy",
   },
   "spriteMaskId":null,
   "visible":true,
