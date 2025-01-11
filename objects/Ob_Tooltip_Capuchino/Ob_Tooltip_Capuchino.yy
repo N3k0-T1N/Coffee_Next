@@ -1,13 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Ob_Person",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Ob_Tooltip_Capuchino",
+  "eventList":[],
   "managed":true,
-  "name":"Ob_Person",
+  "name":"Ob_Tooltip_Capuchino",
   "overriddenProperties":[],
   "parent":{
     "name":"Объекты",
@@ -32,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sp_Men",
-    "path":"sprites/Sp_Men/Sp_Men.yy",
+    "name":"Sp_Tooltip",
+    "path":"sprites/Sp_Tooltip/Sp_Tooltip.yy",
   },
   "spriteMaskId":null,
   "visible":true,

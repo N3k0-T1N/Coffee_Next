@@ -5,8 +5,9 @@ isLeaving = false; // Уходит ли человек
 
 isStanding = false; // Дошел ли человек до своего места или нет
 speed = -4;
-exit_max_timer = room_speed * irandom_range(20, 30); // Диапазон секунд
+exit_max_timer = room_speed * 6; // 40 секунд на делание молока
 exit_timer = 0;
+exit_timer_speed = 1;
 
 with_coffee = false; //Нужен ли кофе с кофе?
 with_milk = false; // Нужен ли кофе с молоком
