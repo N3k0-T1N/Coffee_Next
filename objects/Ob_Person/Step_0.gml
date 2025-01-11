@@ -1,10 +1,12 @@
 person_to_position(self);
 
 if (isLeaving) {
+	direction = point_direction(x, y, -1 - sprite_width, 208);
+	speed = 4; // Устанавливаем скорость движения
     x += lengthdir_x(speed, direction);
 
     // Уход за экран
-    if (x > room_width + 32) {
+    if (x < -1 - sprite_width) {
         instance_destroy(); // Удаляем персонажа
         update_queue(); // Обновляем очередь
     }
