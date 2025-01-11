@@ -12,3 +12,10 @@ global.person_max_time_respawn = room_speed * irandom_range(3, 6); // Диапа
 global.person_time_respawn = 0; // Сколько времени сейчас
 global.person_time_speed_respawn = 1; // Сколько времени сейчас
 global.queue_positions = [400, 600, 800]; // Позиции для 3 персонажей
+
+global.scores = 0; // Количество очков
+global.scores_for_capuchino = 10; // Очков за капучино 
+global.scores_for_coffee = 5; // Очков за кофе
+
+global.hp = 6; // Кол-во хп
+global.hp_damage = 1; // Сколько хп отнимается за ошибку

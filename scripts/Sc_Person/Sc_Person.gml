@@ -11,6 +11,25 @@ function getted_coffee(obj){
 	}
 }
 
+function which_coffee_tooltip(obj) {
+	switch
+}
+
+function got_coffee (obj) {
+
+}
+
+function not_got_coffee (obj) {
+
+}
+
+function time_expired(obj){
+	obj.exit_timer += obj.exit_timer_speed;
+	if (exit_timer >= exit_max_timer) {
+		not_got_coffee(obj)
+		obj.isLeaving = true;
+	}
+}
 
 function person_to_position(obj) {
     if (!obj.isStanding) {
