@@ -69,6 +69,7 @@
     {"id":{"name":"Sp_Cup","path":"sprites/Sp_Cup/Sp_Cup.yy",},},
     {"id":{"name":"Sp_CupBox","path":"sprites/Sp_CupBox/Sp_CupBox.yy",},},
     {"id":{"name":"Sp_CupMilk","path":"sprites/Sp_CupMilk/Sp_CupMilk.yy",},},
+    {"id":{"name":"Sp_CupMilkCapuchinAnimated","path":"sprites/Sp_CupMilkCapuchinAnimated/Sp_CupMilkCapuchinAnimated.yy",},},
     {"id":{"name":"Sp_CupMilkCapuchined","path":"sprites/Sp_CupMilkCapuchined/Sp_CupMilkCapuchined.yy",},},
     {"id":{"name":"Sp_Hearts","path":"sprites/Sp_Hearts/Sp_Hearts.yy",},},
     {"id":{"name":"Sp_Men","path":"sprites/Sp_Men/Sp_Men.yy",},},

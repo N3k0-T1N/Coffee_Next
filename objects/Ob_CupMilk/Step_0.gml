@@ -16,11 +16,13 @@ sc_border(self);
 if (isFillCapuchino) {
 	show_debug_message("1 УСЛОВИЕ");
     sprite_index = Sp_CupMilkCapuchined;
-    image_index = 2; // Уровень молока
+    image_index = 1; // Уровень молока
+} else if (milk_capuchined >= max_capuchine_time) {
+	sprite_index = Sp_CupMilkCapuchined;
+    image_index = 0; // Уровень молока
 } else if (milk_capuchined > 0) {
 	show_debug_message("2 УСЛОВИЕ");
-    sprite_index = Sp_CupMilkCapuchined;
-    image_index = floor(milk_capuchined / max_capuchine_time * (image_number - 2));
+    sprite_index = Sp_CupMilkCapuchinAnimated;
 } else {
     sprite_index = Sp_CupMilk;
     image_index = floor(milk_filled / max_fill_time * (image_number - 1));
