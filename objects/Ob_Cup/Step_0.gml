@@ -18,9 +18,8 @@ sc_border(self);
 if ((isFillingCoffee || isCoffeeFilled) && milk_filled == 0 && !isBroken) {
     // Рассчитываем кадр на основе уровня наполнения и количества кадров в текстуре
     image_index = floor(coffee_filled / max_fill_coffee_time * (image_number - 1));
-} 
 
-else if (isCoffeeFilled && milk_filled > 0 && !isBroken) {
+} else if (isCoffeeFilled && milk_filled > 0 && !isBroken) {
     // Если кружка заполнена кофе и частично молоком, меняем спрайт на капучино
     sprite_index = Sp_Capuchino;
 

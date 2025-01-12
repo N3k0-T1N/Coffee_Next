@@ -1,3 +1,5 @@
+image_index = irandom_range(0, 21);
+
 wanted_number_coffe = irandom_range(1, 2); // выбор рандомного кофе
 number_queue_person = 0; // Какой человек в очереди
 
