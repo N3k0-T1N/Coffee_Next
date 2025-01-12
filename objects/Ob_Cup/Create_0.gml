@@ -1,8 +1,13 @@
 dragging = false; // Флаг состояния перетаскивания
 
+snd_put = Put_Cup;
+
 isBreakable = true; // Обьект ломается
 isBroken = false; // Флаг того, сломан ли обьект
 obj_breake = Sp_BrokenCup; // Спрайт сломаной кружки
+snd_breake = Crash; // Звук разбития кружки
+
+on_ground = false; // Не на твержой поверхности
 
 isFillingCoffee = false; // Флаг состояния наполняется ли стакан кофе
 isCoffeeFilled = false; // Флаг заполнения кружки кофе

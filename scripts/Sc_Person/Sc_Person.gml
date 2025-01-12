@@ -1,67 +1,50 @@
-function getted_coffee(obj){
-	switch (obj.wanted_number_coffe) {
-	case 0: // Обычный кофе
-		obj.with_coffee = true;
-		obj.with_milk = false; 
-		break;
-	case 1: // Капучино
-		obj.with_coffee = true;
-		obj.with_milk = true;
-		break;
-	}
-}
-
-function which_coffee_tooltip(obj) {
+function which_coffee(obj) {
 	if (obj.number_queue_person == 1
 	&& isStanding
 	&& !isTooltiled) {
 		var tooltip_coffee;
 		switch (obj.wanted_number_coffe) {
 		case 1:
-		tooltip_coffee = instance_create_layer(x, y, "cups_layer", Ob_Tooltip_Coffee)
-		obj.with_coffee = true;
-		obj.with_milk = false;
+			tooltip_coffee = instance_create_layer(x, y, "machines_layer", Ob_Tooltip_Coffee);
+			obj.with_coffee = true;
+			obj.with_milk = false;
+			obj.score_count = global.scores_for_coffee;
 			break;
 		case 2:
-		tooltip_coffee = instance_create_layer(x, y, "cups_layer", Ob_Tooltip_Capuchino)
-		obj.with_coffee = true;
-		obj.with_milk = true;
+			tooltip_coffee = instance_create_layer(x, y, "machines_layer", Ob_Tooltip_Capuchino)
+			obj.with_coffee = true;
+			obj.with_milk = true;
+			obj.score_count = global.scores_for_capuchino;
 			break;
 		}
+		tooltip_coffee.x += tooltip_coffee.sprite_width;
+		tooltip_coffee.y -= tooltip_coffee.sprite_height - 30; 
 		isTooltiled = true;
 	}
 }
 
-function got_coffee () {
-	var tooltip = instance_find(Ob_Tooltip_Coffee, 0);
-	if (tooltip == noone) {
-		tooltip = instance_find(Ob_Tooltip_Capuchino, 0);
-		global.scores += global.scores_for_coffee;
-		instance_destroy(tooltip);
-	} else {
-		global.scores += global.scores_for_capuchino;
-		instance_destroy(tooltip);
-	}
-
+function got_coffee (obj) {
+	var tooltip_coffee = instance_find(Ob_Tooltip_Coffee, 0);
+	var tooltip_capuch = instance_find(Ob_Tooltip_Capuchino, 0);
+	instance_destroy(tooltip_coffee);
+	instance_destroy(tooltip_capuch);
+	global.scores += obj.score_count;
+	show_debug_message("Очков: " + string(global.scores))
 }
 
 function not_got_coffee () {
-	var tooltip = instance_find(Ob_Tooltip_Coffee, 0);
-	if (tooltip == noone) {
-		tooltip = instance_find(Ob_Tooltip_Capuchino, 0);
-		global.hp -= global.hp;
-		instance_destroy(tooltip);
-	} else {
-		global.scores += global.scores_for_capuchino;
-		instance_destroy(tooltip);
-	}
-
+	var tooltip_coffee = instance_find(Ob_Tooltip_Coffee, 0);
+	var tooltip_capuch = instance_find(Ob_Tooltip_Capuchino, 0);
+	instance_destroy(tooltip_coffee);
+	instance_destroy(tooltip_capuch);
+	global.hp -= global.hp_damage;
 }
 
 function time_expired(obj){
 	obj.exit_timer += obj.exit_timer_speed;
-	if (exit_timer >= exit_max_timer) {
-		not_got_coffee()
+	if (exit_timer >= exit_max_timer
+	&& !obj.isLeaving) {
+		not_got_coffee();
 		obj.isLeaving = true;
 	}
 }
@@ -87,7 +70,7 @@ function spawn_person() {
     // Если количество персонажей меньше максимального
     if (instance_number(Ob_Person) < global.max_persons) {
         if (global.person_time_respawn >= global.person_max_time_respawn
-		|| global.first_person) {
+		|| instance_number(Ob_Person) == 0) {
             // Создаём нового персонажа
             var new_person = instance_create_layer(1025, 208, "ui_layer", Ob_Person);
 
@@ -103,7 +86,6 @@ function spawn_person() {
             }
 
             global.person_time_respawn = 0; // Сбрасываем таймер спавна
-			global.first_person = false;
         } else {
             global.person_time_respawn += global.person_time_speed_respawn; // Увеличиваем время ожидания
         }

@@ -6,7 +6,6 @@ global.milk_shelf_y = 738; // Полка с молоком
 global.milk_shelf_x1 = 480; // Полка с молоком
 global.milk_shelf_x2 = 670; // Полка с молоком
 
-global.first_person = true;
 global.max_persons = 3; // Максимальное кол-во людей
 global.person_max_time_respawn = room_speed * irandom_range(10, 40); // Диапазон респавна людей
 global.person_time_respawn = 0; // Сколько времени сейчас
@@ -18,4 +17,5 @@ global.scores_for_capuchino = 10; // Очков за капучино
 global.scores_for_coffee = 5; // Очков за кофе
 
 global.hp = 6; // Кол-во хп
-global.hp_damage = 1; // Сколько хп отнимается за ошибку
+global.hp_max = 6; // Макс колво хп
+global.hp_damage = 2; // Сколько хп отнимается за ошибку

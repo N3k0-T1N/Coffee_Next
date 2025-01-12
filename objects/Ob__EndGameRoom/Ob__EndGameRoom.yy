@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Ob_Hearts",
+  "%Name":"Ob__EndGameRoom",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Ob_Hearts",
+  "name":"Ob__EndGameRoom",
   "overriddenProperties":[],
   "parent":{
     "name":"Объекты",
@@ -30,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"Sp_Hearts",
-    "path":"sprites/Sp_Hearts/Sp_Hearts.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,6 +1,9 @@
 dragging = false; // Флаг состояния перетаскивания
 
+snd_put = Put_CupMilk;
+
 isBreakable = false; // Кружка не ломается
+on_ground = false; // Не на твержой поверхности
 
 isFilling = false; // Флаг состояния наполняется ли стакан кофе или молоком
 isMilkFilled = false; // Флаг заполнения кружки
