@@ -1,5 +1,6 @@
 draw_sprite_ext(sprite_index, image_index, x, y, 4.746341, 4.318519, 0, c_white, 1);
 draw_set_font(FontMain);
+draw_set_color(c_black);
 draw_text(x+25, y+25, 
 "Добро пожаловать в Coffee Next!\n" +
 "Инструкция по применению:\n" +

@@ -7,6 +7,7 @@ isBreakable = true; // Обьект ломается
 isBroken = false; // Флаг того, сломан ли обьект
 obj_breake = Sp_BrokenCup; // Спрайт сломаной кружки
 snd_breake = Crash; // Звук разбития кружки
+break_speed = 5;
 
 on_ground = false; // Не на твержой поверхности
 
