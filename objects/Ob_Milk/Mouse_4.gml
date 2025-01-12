@@ -1,7 +1,7 @@
-if (global.dragged_object == noone) { // Проверяем, свободен ли "механизм"
+if (global.dragged_object == noone && global.clicked_object_depth == depth) { // Проверяем, свободен ли "механизм"
     global.dragged_object = id; // Устанавливаем текущий объект как перетаскиваемый
 	layer = layer_get_id("held_layer");
-
+	depth = 97;
 	if (position_meeting(mouse_x, mouse_y, Ob_CupMilk)) {
 		
 	}

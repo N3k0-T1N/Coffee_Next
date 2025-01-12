@@ -1,4 +1,5 @@
-if (position_meeting(mouse_x, mouse_y, self)) {
+if (position_meeting(mouse_x, mouse_y, self)
+	&& global.clicked_object_depth == depth) {
     // Проверяем, находится ли под мышкой объект, кроме доски правил
     var other_object = instance_position(mouse_x, mouse_y, all); // Находим любой объект под мышкой
     if (other_object != noone && other_object != id) {
