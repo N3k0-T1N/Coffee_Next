@@ -5,6 +5,7 @@ isLeaving = false; // Уходит ли человек
 
 isStanding = false; // Дошел ли человек до своего места или нет
 speed = -4;
+depth = 99;
 exit_max_timer = room_speed * 30; // 30 секунд на делание нужного кофе
 exit_timer = 0;
 exit_timer_speed = 1;

@@ -1,4 +1,4 @@
-if (global.dragged_object == noone) { // Проверяем, свободен ли "механизм"
+if (global.dragged_object == noone && global.clicked_object_depth == depth) { // Проверяем, свободен ли "механизм"
     global.dragged_object = id; // Устанавливаем текущий объект как перетаскиваемый
 	layer = layer_get_id("held_layer");
 
