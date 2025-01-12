@@ -12,8 +12,12 @@ sc_border(self)
 
 
 if (isFill) {
+	if(!audio_is_playing(Pour_Milk)) {
+		audio_play_sound(Pour_Milk, 1, false);
+	}
 	image_index = 1;
 }
 else {
+	audio_stop_sound(Pour_Milk);
 	image_index = 0;
 }

@@ -2,9 +2,6 @@ if (global.dragged_object == noone && global.clicked_object_depth == depth) { //
     global.dragged_object = id; // Устанавливаем текущий объект как перетаскиваемый
 	layer = layer_get_id("held_layer");
 	depth = 97;
-	if (position_meeting(mouse_x, mouse_y, Ob_CupMilk)) {
-		
-	}
 
 	dragging = true; // Включаем флаг перетаскивания
 	offset_x = mouse_x - x; // Сохраняем смещение мыши по X
