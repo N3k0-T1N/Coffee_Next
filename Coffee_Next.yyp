@@ -99,6 +99,7 @@
     {"id":{"name":"Sp_Milk","path":"sprites/Sp_Milk/Sp_Milk.yy",},},
     {"id":{"name":"Sp_NO","path":"sprites/Sp_NO/Sp_NO.yy",},},
     {"id":{"name":"Sp_PlayAgain","path":"sprites/Sp_PlayAgain/Sp_PlayAgain.yy",},},
+    {"id":{"name":"Sp_Radio","path":"sprites/Sp_Radio/Sp_Radio.yy",},},
     {"id":{"name":"Sp_RuleDesk","path":"sprites/Sp_RuleDesk/Sp_RuleDesk.yy",},},
     {"id":{"name":"Sp_RuleDeskBackGround","path":"sprites/Sp_RuleDeskBackGround/Sp_RuleDeskBackGround.yy",},},
     {"id":{"name":"Sp_Scrore","path":"sprites/Sp_Scrore/Sp_Scrore.yy",},},
