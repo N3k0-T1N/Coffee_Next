@@ -8,6 +8,6 @@ if (position_meeting(mouse_x, mouse_y, self)) {
 
     // Телепортация доски правил
     var desc = instance_find(Ob_RuleDesk, 0);
-    desc.x = 28;
-    desc.y = 32;
+    desc.x = 25;
+    desc.y = 25;
 }
