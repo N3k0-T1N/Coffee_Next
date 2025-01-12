@@ -777,6 +777,8 @@
   },
   "pointRounding":0,
   "ranges":[
+    {"lower":10,"upper":10,},
+    {"lower":13,"upper":13,},
     {"lower":32,"upper":127,},
     {"lower":1040,"upper":1103,},
     {"lower":9647,"upper":9647,},
