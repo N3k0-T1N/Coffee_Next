@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":11.233,
+  "duration":5.0,
   "name":"Coffee_Machine",
   "parent":{
     "name":"Звуки",
