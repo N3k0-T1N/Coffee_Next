@@ -1,2 +1,2 @@
 // Этот объект остаётся между комнатами
-instance_deactivate_object(Ob_BackgroundMusic);
+instance_activate_object(Ob_BackgroundMusic);
