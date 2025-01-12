@@ -17,8 +17,8 @@ function collision_tables(obj){
     }
     // Проверка столкновения с подставкой кофемашины
     else if (obj_bottom >= global.coffee_machine_table_y && obj_bottom < global.coffee_machine_table_y + 30
-        && (obj.x >= global.coffe_machine_x1 && obj.x <= global.coffe_machine_x2
-        || obj.x + sprite_width >= global.coffe_machine_x1 && obj.x + sprite_width <= global.coffe_machine_x2)) {
+        && (obj.x >= global.coffe_machine_x1 + 30 && obj.x <= global.coffe_machine_x2 - 30
+        || obj.x + sprite_width >= global.coffe_machine_x1 + 30 && obj.x + sprite_width <= global.coffe_machine_x2 - 30)) {
         obj.y = global.coffee_machine_table_y - sprite_height; // Ставим объект на кофемашину
 		break_obj(obj);
         obj.vspeed = 0;                                  // Обнуляем скорость
