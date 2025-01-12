@@ -1,5 +1,6 @@
 if (!isWorking 
-&& global.dragged_object == noone) { // Если кофемашина не работает
+&& global.dragged_object == noone
+&& global.clicked_object_depth == depth) { // Если кофемашина не работает
     isWorking = true; // Включаем работу
     timer = room_speed * 6; // Устанавливаем таймер (5 секунд, room_speed — количество шагов в секунду)
     audio_play_sound(Coffee_Machine, 1, false); // Звук включения

@@ -1,4 +1,5 @@
 dragging = false; // Флаг состояния перетаскивания
+depth = 97;
 
 snd_put = Put_Cup;
 

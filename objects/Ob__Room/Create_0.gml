@@ -19,3 +19,5 @@ global.scores_for_coffee = 5; // Очков за кофе
 global.hp = 6; // Кол-во хп
 global.hp_max = 6; // Макс колво хп
 global.hp_damage = 2; // Сколько хп отнимается за ошибку
+
+global.clicked_object_depth = 10000;
