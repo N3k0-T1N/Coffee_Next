@@ -18,6 +18,6 @@ with (all) {
 
 // Обрабатываем объект с минимальной глубиной
 if (clicked_obj != noone) {
-    show_debug_message("Клик по объекту: " + string(object_get_name(clicked_obj.object_index)) + " с глубиной: " + string(clicked_obj.depth));
+    //show_debug_message("Клик по объекту: " + string(object_get_name(clicked_obj.object_index)) + " с глубиной: " + string(clicked_obj.depth));
 	global.clicked_object_depth = clicked_obj.depth
 }
