@@ -12,7 +12,7 @@ if (global.dragged_object == id) { // Убедиться, что этот объ
 		if (person.number_queue_person == 1 // Если первый человек в очереди
 		&& person.with_coffee == isCoffeeFilled
 		&& person.with_milk == isMilkFilled)  {
-			got_coffee()
+			got_coffee(person)
 			person.isLeaving = true;
 			instance_destroy(); // Удаляем объект
 		}

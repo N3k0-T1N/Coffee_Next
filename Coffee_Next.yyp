@@ -36,7 +36,10 @@
   },
   "name":"Coffee_Next",
   "resources":[
+    {"id":{"name":"Font_Scores_EndGame","path":"fonts/Font_Scores_EndGame/Font_Scores_EndGame.yy",},},
+    {"id":{"name":"Font_Scores","path":"fonts/Font_Scores/Font_Scores.yy",},},
     {"id":{"name":"FontMain","path":"fonts/FontMain/FontMain.yy",},},
+    {"id":{"name":"Ob__EndGameRoom","path":"objects/Ob__EndGameRoom/Ob__EndGameRoom.yy",},},
     {"id":{"name":"Ob__Room","path":"objects/Ob__Room/Ob__Room.yy",},},
     {"id":{"name":"Ob_ButtonExit","path":"objects/Ob_ButtonExit/Ob_ButtonExit.yy",},},
     {"id":{"name":"Ob_ButtonPlay","path":"objects/Ob_ButtonPlay/Ob_ButtonPlay.yy",},},
@@ -53,6 +56,7 @@
     {"id":{"name":"Ob_RuleDesk","path":"objects/Ob_RuleDesk/Ob_RuleDesk.yy",},},
     {"id":{"name":"Ob_RuleDeskBackGround","path":"objects/Ob_RuleDeskBackGround/Ob_RuleDeskBackGround.yy",},},
     {"id":{"name":"Ob_Score","path":"objects/Ob_Score/Ob_Score.yy",},},
+    {"id":{"name":"Ob_Scores_Count","path":"objects/Ob_Scores_Count/Ob_Scores_Count.yy",},},
     {"id":{"name":"Ob_Tooltip_Capuchino","path":"objects/Ob_Tooltip_Capuchino/Ob_Tooltip_Capuchino.yy",},},
     {"id":{"name":"Ob_Tooltip_Coffee","path":"objects/Ob_Tooltip_Coffee/Ob_Tooltip_Coffee.yy",},},
     {"id":{"name":"Ob_Tooltip","path":"objects/Ob_Tooltip/Ob_Tooltip.yy",},},
