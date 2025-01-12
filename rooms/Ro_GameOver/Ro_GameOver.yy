@@ -11,6 +11,7 @@
     {"name":"inst_53E136F7","path":"rooms/Ro_GameOver/Ro_GameOver.yy",},
     {"name":"inst_4CB5BC55","path":"rooms/Ro_GameOver/Ro_GameOver.yy",},
     {"name":"inst_3EE59662","path":"rooms/Ro_GameOver/Ro_GameOver.yy",},
+    {"name":"inst_56C61954","path":"rooms/Ro_GameOver/Ro_GameOver.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -20,6 +21,7 @@
         {"$GMRInstance":"v1","%Name":"inst_53E136F7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_53E136F7","objectId":{"name":"Ob_NO","path":"objects/Ob_NO/Ob_NO.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.1085205,"scaleY":2.0625,"x":597.0,"y":350.0,},
         {"$GMRInstance":"v1","%Name":"inst_4CB5BC55","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CB5BC55","objectId":{"name":"Ob_PlayAgain","path":"objects/Ob_PlayAgain/Ob_PlayAgain.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0363636,"scaleY":3.2857144,"x":389.0,"y":277.0,},
         {"$GMRInstance":"v1","%Name":"inst_3EE59662","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3EE59662","objectId":{"name":"Ob_Score","path":"objects/Ob_Score/Ob_Score.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.6111114,"scaleY":4.0709534,"x":29.0,"y":562.0,},
+        {"$GMRInstance":"v1","%Name":"inst_56C61954","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_56C61954","objectId":{"name":"Ob__EndGameRoom","path":"objects/Ob__EndGameRoom/Ob__EndGameRoom.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-96.0,"y":32.0,},
       ],"layers":[],"name":"Objects","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_69F8A333_1","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_69F8A333_1","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"Sp_Background","path":"sprites/Sp_Background/Sp_Background.yy",},"x":0.0,"y":0.0,},
