@@ -14,7 +14,8 @@ if (global.dragged_object == id) { // Убедиться, что этот объ
 		var person = instance_nearest(mouse_x, mouse_y, Ob_Person) // Если находится человек
 		if (person.number_queue_person == 1 // Если первый человек в очереди
 		&& person.with_coffee == isCoffeeFilled
-		&& person.with_milk == isMilkFilled)  {
+		&& person.with_milk == isMilkFilled
+		&& person.isStanding)  {
 			got_coffee(person)
 			person.isLeaving = true;
 			instance_destroy(); // Удаляем объект
