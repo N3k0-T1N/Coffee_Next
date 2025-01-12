@@ -54,6 +54,7 @@
     {"id":{"name":"Ob_NO","path":"objects/Ob_NO/Ob_NO.yy",},},
     {"id":{"name":"Ob_Person","path":"objects/Ob_Person/Ob_Person.yy",},},
     {"id":{"name":"Ob_PlayAgain","path":"objects/Ob_PlayAgain/Ob_PlayAgain.yy",},},
+    {"id":{"name":"Ob_Radio","path":"objects/Ob_Radio/Ob_Radio.yy",},},
     {"id":{"name":"Ob_RuleDesk","path":"objects/Ob_RuleDesk/Ob_RuleDesk.yy",},},
     {"id":{"name":"Ob_RuleDeskBackGround","path":"objects/Ob_RuleDeskBackGround/Ob_RuleDeskBackGround.yy",},},
     {"id":{"name":"Ob_Score","path":"objects/Ob_Score/Ob_Score.yy",},},
