@@ -22,12 +22,15 @@ function milk_filling(obj){
 
 function milk_capuching(obj) {
 	var coffee_machine = instance_find(Ob_CoffeeMachine, 0); // Находим кофемашину
-	if (position_meeting(obj.x, obj.y, coffee_machine) // Кружка на кофемашине
+	if (position_meeting(obj.x + sprite_width/2, obj.y, coffee_machine) // Кружка на кофемашине
 	&& obj.isMilkFilled // Чашка заполнена молоком полностью
 	&& !obj.isCapuchined // Молоко незакапучено
 	&& coffee_machine.isWorking) { // Кофемашина работает
 		obj.isCapuching = true; // Молоко вспенивается
 		obj.milk_capuchined += obj.capuchine_speed;
+		obj.x = coffee_machine.x + 114;
+		obj.y = global.coffee_machine_table_y - sprite_height;
+		
 		if (milk_capuchined >= obj.max_capuchine_time) {
 			obj.isCapuching = false; // Молоко не вспенивается
 			obj.isCapuchined = true; // Молоко вспенено
