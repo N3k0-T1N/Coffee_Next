@@ -41,6 +41,7 @@
     {"id":{"name":"FontMain","path":"fonts/FontMain/FontMain.yy",},},
     {"id":{"name":"Ob__EndGameRoom","path":"objects/Ob__EndGameRoom/Ob__EndGameRoom.yy",},},
     {"id":{"name":"Ob__Room","path":"objects/Ob__Room/Ob__Room.yy",},},
+    {"id":{"name":"Ob_BackgroundMusic","path":"objects/Ob_BackgroundMusic/Ob_BackgroundMusic.yy",},},
     {"id":{"name":"Ob_ButtonExit","path":"objects/Ob_ButtonExit/Ob_ButtonExit.yy",},},
     {"id":{"name":"Ob_ButtonPlay","path":"objects/Ob_ButtonPlay/Ob_ButtonPlay.yy",},},
     {"id":{"name":"Ob_CoffeeMachine","path":"objects/Ob_CoffeeMachine/Ob_CoffeeMachine.yy",},},

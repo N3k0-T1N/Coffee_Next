@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":10.945306,
+  "duration":5.0,
   "name":"Capuchinator",
   "parent":{
     "name":"Звуки",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"Capuchinator.mp3",
   "type":0,
-  "volume":0.57,
+  "volume":1.0,
 }
